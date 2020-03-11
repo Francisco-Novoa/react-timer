@@ -15,21 +15,18 @@ import 'popper.js';
 import 'bootstrap';
 
 
-const Home = (props) => {
-    return (
-        <div className="container">
-            <div className="row">
-                <div className="col-md-12 d-flex justify-content-center">
-                    <i className="fab fa-html5 fa-5x"></i>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-md-12 d-flex justify-content-center">
-                    <p className="text-success">Welcome to Webpack, Bootstrap and ReactJS</p>
-                </div>
-            </div>
-        </div>
-    )
+class Home extends Component {
+
+    __constructor(){
+        super();
+        this.state={}
+    }
+    render (){
+        return(
+            <h1> Proyecto React Vacio</h1>
+        )
+    }
 }
+ 
 
 ReactDOM.render(<Home />, document.querySelector("#root"));
