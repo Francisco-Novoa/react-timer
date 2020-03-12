@@ -1,3 +1,20 @@
 body {
     background-color: #3f4455;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.backside{
+    background-color: black;
+}
+
+#reloj div div{
+    height:80px;
+}
+
+#reloj div{
+    height: 100px;
+}
+#reloj {
+    text-align: center;
+    font-size:40px;
 }
