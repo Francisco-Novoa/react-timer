@@ -18,3 +18,7 @@ body {
     text-align: center;
     font-size:40px;
 }
+
+.clock:hover{
+    background-color: lightblue !important;
+}

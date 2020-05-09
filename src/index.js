@@ -25,7 +25,11 @@ class Counter extends React.Component {
     componentDidMount() {
         this.timerID = setInterval(
             () => this.tick(),
-        );
+        1000);
+    }
+
+    restart=()=>{
+        this.setState({a:0})
     }
 
     tick() {
@@ -38,7 +42,7 @@ class Counter extends React.Component {
         return (
             <div className="container backside" id="reloj">
                 <div className="row text-white d-flex justify-content-center py-2 m-5 ">
-                    <div className="col-1 bg-dark mx-1 rounded pt-1" ><i className="fas fa-clock"></i></div>
+                    <div className="col-1 bg-dark mx-1 rounded pt-1 clock"  onClick={()=>{this.restart()}} ><i className="fas fa-clock"></i></div>
                     <div className="col-1 bg-dark mx-1 rounded pt-1" >{parseInt(this.state.a / 100000) % 10}</div>
                     <div className="col-1 bg-dark mx-1 rounded pt-1" >{parseInt(this.state.a / 10000) % 10}</div>
                     <div className="col-1 bg-dark mx-1 rounded pt-1" >{parseInt(this.state.a / 1000) % 10}</div>
